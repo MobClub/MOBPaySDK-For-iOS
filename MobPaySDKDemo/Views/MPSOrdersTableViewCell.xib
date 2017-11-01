@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="153" id="KGk-i7-Jjw" customClass="MPSOrdersTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="152.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单号：01234567890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-Ye-UGS">
+                        <rect key="frame" x="24" y="21.5" width="150" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.43137254901960786" green="0.43529411764705883" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付失败" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="get-y0-fFO">
+                        <rect key="frame" x="338" y="21" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-XB-iRt">
+                        <rect key="frame" x="18.5" y="48.5" width="382" height="0.5"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Eno-4A-DJc"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为账户充值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDh-4l-nVf">
+                        <rect key="frame" x="24" y="77.5" width="70" height="20"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 30元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOS-ul-Wvu">
+                        <rect key="frame" x="104" y="76" width="50.5" height="22.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.18823529411764706" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-11-12 22:33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbM-2e-92d">
+                        <rect key="frame" x="24" y="120" width="100" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rbL-XB-iRt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10.5" id="0kU-z0-slE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rbL-XB-iRt" secondAttribute="trailing" constant="10.5" id="18K-pr-l7H"/>
+                    <constraint firstItem="FbM-2e-92d" firstAttribute="top" secondItem="FDh-4l-nVf" secondAttribute="bottom" constant="22" id="2k4-Pt-VJA"/>
+                    <constraint firstItem="get-y0-fFO" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-15" id="3xj-sS-dBH"/>
+                    <constraint firstItem="OOS-ul-Wvu" firstAttribute="leading" secondItem="FDh-4l-nVf" secondAttribute="trailing" constant="10" id="7eZ-0Q-Qvj"/>
+                    <constraint firstItem="FDh-4l-nVf" firstAttribute="leading" secondItem="W1T-Ye-UGS" secondAttribute="leading" id="HdG-TH-KZF"/>
+                    <constraint firstItem="get-y0-fFO" firstAttribute="centerY" secondItem="W1T-Ye-UGS" secondAttribute="centerY" id="KmL-TQ-1Ff"/>
+                    <constraint firstItem="rbL-XB-iRt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="40.5" id="VaE-kR-Sf5"/>
+                    <constraint firstItem="FDh-4l-nVf" firstAttribute="top" secondItem="rbL-XB-iRt" secondAttribute="bottom" constant="28.5" id="fGm-jg-FEl"/>
+                    <constraint firstItem="W1T-Ye-UGS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13.5" id="hqL-LW-CN0"/>
+                    <constraint firstItem="W1T-Ye-UGS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15.5" id="jbZ-DO-pSi"/>
+                    <constraint firstItem="FbM-2e-92d" firstAttribute="leading" secondItem="FDh-4l-nVf" secondAttribute="leading" id="nS9-8T-arM"/>
+                    <constraint firstItem="OOS-ul-Wvu" firstAttribute="centerY" secondItem="FDh-4l-nVf" secondAttribute="centerY" id="zg8-p9-juI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="orderIdLabel" destination="W1T-Ye-UGS" id="FbN-o3-K5I"/>
+                <outlet property="priceLabel" destination="OOS-ul-Wvu" id="imi-ab-DCA"/>
+                <outlet property="statusLabel" destination="get-y0-fFO" id="AOV-yL-4KN"/>
+                <outlet property="subjectLabel" destination="FDh-4l-nVf" id="a9M-9D-qMI"/>
+                <outlet property="timeLabel" destination="FbM-2e-92d" id="FTR-t4-9dW"/>
+            </connections>
+            <point key="canvasLocation" x="-101.5" y="-78.5"/>
+        </tableViewCell>
+    </objects>
+</document>
