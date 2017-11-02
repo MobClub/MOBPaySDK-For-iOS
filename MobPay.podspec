@@ -10,12 +10,8 @@ Pod::Spec.new do |s|
   s.platform              = :ios
   s.ios.deployment_target = "8.0"
   s.libraries             = 'z.1.2.5', 'stdc++'
-  s.default_subspecs      = 'PaySDK'
+  s.vendored_frameworks   = 'SDK/MOBPaySDK/MOBPaySDK.framework'
   s.dependency 'MOBFoundation'
-
-  s.subspec 'PaySDK' do |sp|
-    sp.vendored_frameworks   = 'SDK/MOBPaySDK/MOBPaySDK.framework'
-  end
 
   s.subspec 'Channels' do |sp|
 
