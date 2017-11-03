@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'MobPay'
-  s.version               = "0.0.2"
+  s.version               = "0.0.3"
   s.summary               = 'mob.com免费好用的支付SDK'
   s.license               = 'MIT'
   s.author                = { "qc123456" => "vhbvbqc@gmail.com" }
@@ -9,9 +9,14 @@ Pod::Spec.new do |s|
   s.source                = { :git => "https://github.com/MobClub/MOBPaySDK-For-iOS.git", :tag => s.version.to_s }
   s.platform              = :ios
   s.ios.deployment_target = "8.0"
-  s.libraries             = 'z.1.2.5', 'stdc++'
-  s.vendored_frameworks   = 'SDK/MOBPaySDK/MOBPaySDK.framework'
+  s.default_subspecs      = 'Core'
   s.dependency 'MOBFoundation'
+
+  s.subspec 'Core' do |sp|
+
+      sp.vendored_frameworks   = 'SDK/MOBPaySDK/MOBPaySDK.framework'
+
+  end
 
   s.subspec 'Channels' do |sp|
 
