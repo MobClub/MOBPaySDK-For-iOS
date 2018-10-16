@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'mob_paysdk'
-  s.version               = "1.0.0"
+  s.version               = "1.2.0"
   s.summary               = 'mob.com免费好用的支付SDK'
   s.license               = 'MIT'
   s.author                = { "mob" => "mobproducts@163.com" }
