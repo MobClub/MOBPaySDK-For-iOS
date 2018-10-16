@@ -35,6 +35,15 @@ Pod::Spec.new do |s|
     ssp.dependency 'mob_paysdk/PaySDK'
     end
 
+    # UnionPay
+    sp.subspec 'UnionPay' do |ssp|
+    ssp.vendored_libraries = "SDK/PaySDK/Channels/UnionPay/*.a"
+    ssp.source_files = "SDK/PaySDK/Channels/UnionPay/*.{h,m}"
+    ssp.public_header_files = "SDK/PaySDK/Channels/UnionPay/*.h"
+    ssp.libraries = 'sqlite3'
+    ssp.dependency 'mob_paysdk/PaySDK'
+    end
+
   end
 
 end
